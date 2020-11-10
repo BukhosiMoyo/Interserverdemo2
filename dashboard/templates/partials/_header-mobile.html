@@ -1,10 +1,10 @@
-
+{% load static %}
 <!--begin::Header Mobile-->
-		<div id="kt_header_mobile" class="header-mobile align-items-center header-mobile-fixed">
+		<div id="kt_header_mobile" class="header-mobile align-items-center bg-dark header-mobile-fixed">
 
 			<!--begin::Logo-->
-			<a href="index.html">
-				<img alt="Logo" src="assets/media/logos/logo-light.png" />
+			<a href="{% url 'home' %}">
+				<img alt="Logo" style="width: 110px;" src="{% static 'assets/media/logos/logo.png' %}" />
 			</a>
 
 			<!--end::Logo-->
@@ -19,13 +19,7 @@
 
 				<!--end::Aside Mobile Toggle-->
 
-				<!--begin::Header Menu Mobile Toggle-->
-				<button class="btn p-0 burger-icon ml-4" id="kt_header_mobile_toggle">
-					<span></span>
-				</button>
-
-				<!--end::Header Menu Mobile Toggle-->
-
+				
 				<!--begin::Topbar Mobile Toggle-->
 				<button class="btn btn-hover-text-primary p-0 ml-2" id="kt_header_mobile_topbar_toggle">
 					<span class="svg-icon svg-icon-xl">
