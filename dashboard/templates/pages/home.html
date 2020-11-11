@@ -11,7 +11,7 @@
 
     <!--begin::Main-->
 
-        <!--{% include "partials/_header-mobile.html" %}-->
+        {% include "partials/_header-mobile.html" %}
         <div class="d-flex flex-column flex-root">
 
             <!--begin::Page-->
@@ -26,7 +26,7 @@
 
                     <!--begin::Content-->
                     <div class="content d-flex flex-column flex-column-fluid" id="kt_content">
-
+                        {% include "partials/_subheader/subheader-v1.html" %}
                         {% include "pages/stats.html" %}
                         {% include "pages/charts.html" %}
                         {% include "pages/pricing.html" %}
